@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="">
+        <meta name="viewport" content="width=divice">
+        <title>TimeTable</title>
+        <style>
+            table{
+                /* border: 1px black solid; */
+                border-collapse: collapse;
+
+            }
+            th,td{
+                /* border: 1px solid black; */
+                padding:15px;
+            }
+            .col_02 {
+                width: 100px;
+                /* background-color:  aliceblue; */
+            }
+            #col_03 {
+                width: 100px;
+                /* background-color: beige; */
+            }
+        </style>
+        </head>
+        <body>
+            <table border="1">
+                <caption>
+                    2023 학년도 2학년 2반 이재완 시간표입니다.
+                </caption>
+                    <colgroup>
+                        <col style="width: 100px;">
+                        <col class="col_02">
+                        <col id="col_03">
+                        <col style="width: 100px;">
+                    </colgroup>
+                    
+                <tr>
+                    <th>구분</th>
+                    <th>월요일</th>
+                    <th>화요일</th>
+                    <th>수요일</th>
+                </tr>
+                <tr>
+                    <td>1교시</td>
+                    <td>2행 2열</td>
+                    <td rowspan="3">유니티</td>
+                    <td rowspan="3">웹 프밍</td>
+                </tr>
+                <tr>
+                    <td>2교시</td>
+                    <td>3행 2열</td>
+                    <!-- <td>3행 3열</td> -->
+                    <!-- <td>웹 프밍</td> -->
+                </tr>
+                <tr>
+                    <td>3교시</td>
+                    <td>4행 2열</td>
+                    <!-- <td>4행 3열</td> -->
+                    <!-- <td>웹 프밍</td> -->
+                </tr>
+                </table>
+                <a href="../index.html">home</a>
+                </body>

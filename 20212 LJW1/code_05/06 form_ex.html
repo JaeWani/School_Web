@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title> 웹 폼</title>
+	<style>
+		.header {
+            margin: 0 auto;
+            width: 500px;
+        }
+		.login legend{
+			color: blue;
+			font-weight: bolder;
+		}
+		.register legend{
+			color: blue;
+			font-weight: bolder;
+		}
+		.easys legend{
+			color: blue;
+			font-weight: bolder;
+		}
+		form ul li {
+			list-style: none;
+			margin: 15px 0;
+		}
+		li label {
+            width: 120px;
+            float: left;         
+            padding-right: 10px;
+        }
+		li label em{
+			color: red;	
+		}
+		.sendform{
+			text-align: center;	
+			margin-top: 15px; 		
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<form>
+			<fieldset class="login">
+				<legend>로그인</legend>
+				<label for="user_id">아이디 </label>
+				<input type="text" id="user_id" size="10" autofocus>
+				<label for="user_pw">비밀번호 </label>
+				<input type="password" id="user_pw" size="10">
+				<input type="submit" value="로그인">
+			</fieldset>
+			<fieldset class="register">
+				<legend>가입하기</legend>
+				<ul>
+					<li>
+						<label class="reg" for="user_name">아이디 <em>*</em></label>
+						<input type="text" id="new_id" size="20" autocomplete="on" required>
+					</li>
+					<li>
+						<label class="reg" for="new_pw1">비밀번호 <em>*</em></label>
+						<input type="password" id="new_pw1" size="20" required>
+					</li>
+					<li>
+						<label class="reg" for="new_pw2">비밀번호 확인 <em>*</em></label>
+						<input type="password" id="new_pw2" size="20" required>
+					</li>
+					<li>
+						<label class="reg" for="user_name">이름 <em>*</em></label>
+						<input type="text" id="user_name" size="20" required>
+					</li>
+					<li>
+						<label class="reg" for="user_mail">메일 주소 <em>*</em></label>
+						<input type="email" id="user_mail" size="20" required>
+					</li>
+					<li>
+						<label class="reg" for="user_tel">전화번호 </label>
+						<input type="tel" id="user_tel" size="20" placeholder="010-000-0000">
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset class="easys">
+				<legend>도서소개</legend>
+				<textarea name="intro" cols="65" rows="7">
+			</textarea>
+			</fieldset>
+			<div class="sendform">
+				<input type="submit" value="가입하기">
+				<input type="reset" value="다시쓰기">
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>

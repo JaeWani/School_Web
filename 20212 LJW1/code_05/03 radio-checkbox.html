@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radio-checkbox</title>
+    <style>
+        .center {
+            margin: 0 auto;
+            width: 500px;
+        }
+
+        .bg1 {
+            background-color: antiquewhite;
+        }
+
+        .bg2 {
+            background-color: rgb(226, 248, 235);
+        }
+
+        form fieldset {
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="center">
+        <form>
+            <fieldset class="bg1">
+                <legend>신청과목</legend>
+                <p>1학기 수강과목을 신청해 주세요. (1과목만 선택 가능)</p>
+                <label for="a"><input type="radio" name="subject" id="a" value="spe"></label>회화
+                <label for="b"><input type="radio" name="subject" id="b" value="gra"></label>문법1
+                <label for="c"><input type="radio" name="subject" id="c" value="wri" checked></label>작문
+                <label for="d"><input type="radio" name="subject" id="d" value="spe"></label>회화2
+                <label for="e"><input type="radio" name="subject" id="e" value="gra"></label>문법3
+                <label for="f"><input type="radio" name="subject" id="f" value="wri"></label>작문3
+            </fieldset>
+            <fieldset class="bg2">
+                <legend>메일링</legend>
+                <p>* 메일로 받고 싶은 뉴스 주제를 선택해 주세요. (복수 선택 가능)</p>
+                <label for="g"><input type="checkbox" name="subject1" id="g" value="spe"></label>회화단신
+                <label for="h"><input type="checkbox" name="subject1" id="h" value="gra" checked></label>5분회화
+                <label for="i"><input type="checkbox" name="subject1" id="i" value="wri"></label>모닝팝스
+            </fieldset>
+        </form>
+    </header>
+</body>
+
+</html>
