@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset legend {
+            color: blue;
+            font-weight: bold;
+        }
+        .center{
+            margin: 0 auto;
+            width:  800px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>게임 제작 설문조사</h1>
+    <header class="center">
+        <form>
+            <fieldset class="qustion_1">
+                <legend>문항 1</legend>
+                <p> 평소에 게임을 얼마나 자주 하는 편이신가요? </p>
+                <label for="q1"><input type="radio" name="subject" id="q1" value="a"></label> 매우 많이 한다.
+                <label for="q2"><input type="radio" name="subject" id="q2" value="b"></label> 많이 한다.
+                <label for="q3"><input type="radio" name="subject" id="q3" value="c"></label> 적당히 한다.
+                <label for="q4"><input type="radio" name="subject" id="q4" value="d"></label> 조금 한다.
+                <label for="q5"><input type="radio" name="subject" id="q5" value="e"></label> 매우 조금 한다.
+            </fieldset>
+
+            <fieldset class="qustion_2">
+                <legend>문항 2</legend>
+                <p> 어떤 게임을 가장 많이 플레이 하셨나요?</p>
+                <label for="qq1"><input type="text" name="subject1" id="qq1"></label>
+            </fieldset>
+
+            <fieldset class="qustion_3">
+                <legend> 문항 3</legend>
+                <p> 게임을 구매해보신 경험이 있나요? </p>
+                <label for="qqq1"><input type="radio" name="subject2" id="qqq1"></label> 네
+                <label for="qqq2"><input type="radio" name="subject2" id="qqq2"></label> 아니요
+                <p> </p>
+                <p> </p>
+                <p> 있다면, 게임을 구매할 때 사용한 가장 큰 금액은 얼마인가요?</p>
+                <label for="qqq1-1"><input type="text" name="subject3" id="qqq1-1"></label>           
+            </fieldset>
+        </form>
+    </header>
+</body>
+
+</html>
