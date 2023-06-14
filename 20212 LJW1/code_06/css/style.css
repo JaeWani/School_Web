@@ -1,0 +1,21 @@
+   p {
+       color: white;
+       border: 10px solid red;
+       padding: 5px;
+       margin: 50px;
+       width: 150px;
+       height: 100px;
+       background-color: blue;
+       box-sizing: border-box;
+   }
+
+   strong {
+       color: white;
+       border: 10px solid red;
+       padding: 5px 10px;
+       margin: 50px;
+       width: 150px;
+       height: 150px;
+       display: inline-block;
+       background-color: blue;
+   }

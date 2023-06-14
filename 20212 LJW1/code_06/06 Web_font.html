@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폰트 크기 px, em, rem</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: 'Gasoek One', cursive;
+        }
+        .ls{
+            letter-spacing: 0.2em;
+        }
+        .shadow{
+            text-shadow: 5px 5px 2px rgba(156, 131, 131, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="shadow">1. 3em의 크기를 가진 제목(48px)</h1>
+    <p>2. 1em의 크기를 가진 단락(16px)</p>
+    <div class="ls">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem provident quae dolor aperiam exercitationem sed, pariatur soluta, ex deserunt facere ducimus optio dolores, dolorum quibusdam dicta! Voluptatum, nemo! Praesentium, minima.</div>
+    <div class="px">4. 14PX 글자입니다.
+        <div>4-1 16PX--14px 글자입니다.
+            <div class="em">4-1-1 16PX--?px 글자입니다.</div>
+        </div>
+    </div>
+    <div class="em">5. 16PX 글자입니다.</div>
+    <div class="rem">6. rem 글자입니다.</div>
+    <div class="em">6-1 16PX--32px 글자입니다.
+        <div>6-1-1 32PX 글자입니다.
+            <div class="rem">6-1-2 32PX--16px 글자입니다.</div>
+        </div>
+    </div>
+</body>
+
+</html>
